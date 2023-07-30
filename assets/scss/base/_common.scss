@@ -1,0 +1,160 @@
+//base 
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+body {
+    line-height: 1.5;
+    color: $dark;
+    background: #fff;
+    // font-family: 'Roboto', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: $dark;
+    display: block;
+
+}
+
+.font-l {
+    font-size: $font-l;
+}
+
+.font-m {
+    font-size: $font-m;
+}
+
+.font-s {
+    font-size: $font-s;
+}
+
+.lh-l {
+    line-height: $lh-l;
+}
+
+.lh-m {
+    line-height: $lh-m;
+}
+
+.lh-s {
+    line-height: $lh-s;
+}
+
+.primary {
+    color: $primary;
+
+}
+
+.secondary {
+    color: $secondary;
+}
+
+.danger {
+    color: $danger;
+}
+
+
+.mb-l {
+    margin-bottom: $mb-l;
+}
+
+.mb-m {
+    margin-bottom: $mb-m;
+}
+
+.mb-s {
+    margin-bottom: $mb-s;
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.pos-a {
+    position: absolute;
+}
+
+.pos-r {
+    position: relative;
+}
+
+.df {
+    display: flex;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.jcsb {
+    justify-content: space-between;
+}
+
+.aic {
+    align-items: center;
+}
+
+.df-c {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-end {
+    align-self: flex-end;
+}
+
+.fx-grow {
+    flex-grow: 1;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.hover:hover {
+    color: $dark;
+}
+
+.h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: $primary;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.ptb-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.indent-12 {
+    text-indent: 12px;
+}
+
+.h-36 {
+    height: 36px;
+}

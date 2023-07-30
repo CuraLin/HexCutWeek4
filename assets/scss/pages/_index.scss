@@ -1,3 +1,393 @@
-.index-title {
-  font-size: 100px;
+// main rwd
+
+@include mobile {
+  .ptb-80 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .h2 {
+    font-size: $font-s;
+    margin-bottom: 24px;
+  }
+}
+
+
+
+// banner
+
+.banner {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+
+  @include pad {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+  }
+
+  @include mobile {
+    background-position: center;
+  }
+
+  .container {
+    height: 787px;
+    justify-content: flex-end;
+
+    @include mobile {
+      height: 396px;
+    }
+  }
+
+  .banner__info {
+    // padding-top: 296px;
+    // padding-bottom: 296px;
+
+    @include mobile {
+      padding-top: 144px;
+      padding-bottom: 144px;
+    }
+
+    h3 {
+      font-size: 36px;
+
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+
+    h2 {
+      font-size: 64px;
+      padding-bottom: 4px;
+      font-weight: 700;
+
+      @include mobile {
+        font-size: $font-s;
+        padding-bottom: 8px;
+        font-weight: 700;
+      }
+    }
+
+    h2,
+    h3 {
+      color: $primary;
+    }
+
+
+    .button {
+      color: $light;
+      font-size: 20px;
+      padding: 6px 12px;
+      background: $danger;
+      font-weight: 500;
+    }
+
+    .button--hover:hover {
+      background: $light;
+      color: $danger;
+    }
+  }
+}
+
+// banner-end
+
+
+
+
+// intro
+
+.intro {
+  background: $secondary;
+
+  h2 {
+
+    margin-bottom: 32px;
+  }
+
+}
+
+.intro__menu {
+  @include pad {
+    flex-wrap: wrap;
+  }
+
+  .intro__list {
+    max-width: 25%;
+    text-align: center;
+
+    @include pad {
+      max-width: 46%;
+    }
+
+    @include mobile {
+      max-width: 100%;
+    }
+
+    img {
+      max-height: 83.83px;
+      margin-bottom: 24px;
+
+      @include pad {
+        max-height: auto;
+        margin-bottom: 24px;
+      }
+
+    }
+
+    h3 {
+      font-size: $font-s;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: $primary;
+
+    }
+
+    p {
+      text-align: start;
+    }
+
+    &:not(:last-child) {
+      margin-right: 24px;
+
+      @include pad {
+        margin-right: 0px;
+      }
+
+      @include mobile {
+        margin-bottom: 32px;
+      }
+    }
+
+    &:nth-child(odd) {
+      @include pad {
+        margin-right: 24px;
+      }
+
+      @include mobile {
+        margin-right: 0px;
+      }
+
+    }
+  }
+}
+
+
+// intro-end
+
+// product
+
+
+.product__menu {
+  @include pad {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product__list {
+
+
+    max-width: 33.333%;
+
+    @include pad {
+      max-width: 48%;
+    }
+
+    @include mobile {
+      max-width: 100%;
+    }
+
+    &:not(:last-child) {
+      margin-right: 24px;
+
+      @include pad {
+        margin-right: 0px;
+      }
+    }
+
+    img {
+      margin-bottom: 8px;
+    }
+
+    .h2 {
+      color: $danger;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+    }
+  }
+}
+
+// product-end
+
+// linkage
+
+.linkage {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .h2 {
+
+    color: $light;
+  }
+
+
+}
+
+.linkage__card {
+  background: $light;
+
+  @include pad {
+    flex-wrap: wrap;
+  }
+
+  .h2 {
+    color: $danger;
+    margin: 8px 0;
+  }
+
+  .linkage__card__item {
+    @include pad {
+      max-width: 100%;
+    }
+
+    .h2 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900;
+      font-style: italic;
+    }
+
+    max-width: 50%;
+  }
+}
+
+
+
+// linkage-end
+
+// recommed
+.recommed__card {
+  @include pad {
+    flex-wrap: wrap;
+  }
+
+  .recommed__card__item {
+    max-width: 25%;
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+
+    @include pad {
+      max-width: 48%;
+      margin-bottom: 24px;
+    }
+
+    @include mobile {
+      max-width: 100%;
+      margin-bottom: 16px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 24px;
+
+      @include pad {
+        margin-right: 0px;
+      }
+    }
+
+    &:nth-child(odd) {
+      @include pad {
+        margin-right: 24px;
+      }
+
+      @include mobile {
+        margin-right: 0px;
+      }
+
+    }
+
+    &__text {
+      padding: 16px;
+      height: 205px;
+
+      // &__header {
+      //     margin-bottom: 48px;
+      // }
+
+      &--gray {
+        color: #707070;
+        font-size: 14px;
+      }
+
+      h3 {
+        margin-bottom: 8px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+// recommed-end
+.contact {
+  background: $secondary;
+
+  .container {
+    max-width: 660px;
+  }
+
+  p {
+    margin-bottom: 24px;
+    font-size: 20px;
+  }
+
+  textarea {
+    height: 136px;
+    padding-top: 6px;
+    resize: none;
+  }
+
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .contact__check__agree {
+    margin-right: 4px;
+    cursor: pointer;
+  }
+
+  .contact__check__label {
+    margin-bottom: 0;
+  }
+
+  .contact--button {
+    // width: 416px;
+    font-weight: 700;
+    background: $danger;
+    color: #fff;
+    padding: 16px 176px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    margin-top: 48px;
+
+    @include pad {
+      padding: 16px 136px;
+    }
+
+    @include mobile {
+      width: 100%;
+      margin-top: 24px;
+    }
+  }
+
+  .contact__check {
+    @include mobile {
+      align-items: flex-start;
+    }
+
+  }
+
 }
