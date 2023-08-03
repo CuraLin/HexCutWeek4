@@ -1,5 +1,5 @@
-// footer
-.footer--bg {
+// l-footer
+.l-footer--bg {
   background: $danger;
   color: $light;
 
@@ -19,7 +19,7 @@
 
 
 
-.footer {
+.l-footer {
   padding-top: 48px;
   padding-bottom: 32px;
   border-bottom: 1px solid $light;
@@ -29,7 +29,7 @@
     padding-bottom: 24px;
   }
 
-  .footer__menu {
+  .l-footer__menu {
 
     margin-bottom: 36px;
 
@@ -79,8 +79,12 @@
     }
   }
 
-  .footer__social {
+  .l-footer__social {
     align-self: flex-start;
+
+    a:hover {
+      transform: scale(1.3);
+    }
 
     @include mobile {
       align-self: flex-start;
@@ -154,4 +158,4 @@
 
 }
 
-// footer-end
+// l-footer-end

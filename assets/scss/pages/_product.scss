@@ -1,0 +1,246 @@
+nav {
+    .container {
+        @include pad {
+            max-width: 100%;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+    }
+}
+
+.nav__menu {
+
+    li {
+
+        text-align: center;
+        position: relative;
+
+    }
+
+    a {
+        font-family: 'Roboto', sans-serif;
+        font-size: $font-m;
+        font-weight: 500;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        border: 1px solid #DCDCDC;
+
+        @include pad {
+            font-size: $h4-font-size;
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+
+        @include mobile {
+            font-size: $font-size-base;
+        }
+
+    }
+
+    .nav__menu--border {
+        border-left: 1px solid #DCDCDC;
+        border-right: 1px solid #DCDCDC;
+        border-bottom: 1px solid #DCDCDC;
+        background: #fff;
+        height: 8px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: 100;
+
+    }
+
+    .bd1 {
+        &--hover {
+            background: $danger;
+        }
+    }
+
+    .bd2 {
+        &--hover {
+            background: $danger;
+        }
+    }
+
+    .bd3 {
+        &--hover {
+            background: $danger;
+        }
+    }
+
+
+}
+
+
+.pro__banner {
+    .product__bannerImg {
+        @include bg-cover("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-1.png?raw=true");
+
+        @include pad {
+            @include bg-cover("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-1.png?raw=true")
+        }
+
+        width: 50%;
+        height: 296px;
+    }
+
+    .product__bannerImg--pic2 {
+        @include bg-cover("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-2.png?raw=true");
+
+        @include pad {
+            @include bg-cover("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-2.png?raw=true")
+        }
+    }
+
+    .product__bannerImg--pic3 {
+        @include bg-cover("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-3.png?raw=true");
+
+        @include pad {
+            @include bg-cover("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-3.png?raw=true")
+        }
+
+
+    }
+
+    .product__bannerImg--pic4 {
+        @include bg-cover("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-4.png?raw=true");
+
+        @include pad {
+            @include bg-cover("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-4.png?raw=true")
+        }
+
+
+    }
+
+}
+
+.cart {
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 42px;
+        font-weight: 500;
+        text-align: center;
+
+    }
+
+    h2 {
+        font-size: $font-m;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    @include mobile {
+        margin-bottom: 32px;
+    }
+
+}
+
+.cart__card {
+    &__item--Padnone {
+        @include pad {
+            display: none;
+        }
+
+    }
+
+    &__item--Mobilenone {
+        @include mobile {
+            display: none;
+        }
+
+    }
+
+    .cart__card__item {
+
+
+        &:nth-child(odd) {
+            margin-bottom: 80px;
+
+            @include pad {
+                margin-bottom: 40px;
+            }
+
+            @include mobile {
+                margin-bottom: 24px;
+            }
+        }
+
+        @include mobile {
+            margin-bottom: 24px;
+        }
+
+        .cart__card__item__text__span {
+            font-size: $font-s;
+            font-family: 'Roboto', sans-serif;
+
+        }
+
+        .cart--littlebox {
+            height: 24px;
+            width: 24px;
+            border-radius: 4px;
+        }
+
+        .brown {
+            background: #5F3E2D;
+            margin-right: 8px;
+        }
+
+        .lightbrown {
+            background: #B75929;
+        }
+    }
+
+}
+
+.pagination {
+    @include pad {
+        margin-top: 40px;
+    }
+
+    .pagin__menu {
+        li {
+            border: 1px solid #555555;
+        }
+
+
+        li:not(:last-child) {
+            border-right: none;
+        }
+
+        .page {
+            font-family: 'Roboto', sans-serif;
+            font-size: 19px;
+            padding: 11px 12px;
+            color: #555555;
+
+
+            @include mobile {
+                font-size: 16px;
+                padding: 11px 14px;
+            }
+
+            &:hover {
+                background: #000;
+                color: #fff;
+            }
+
+
+        }
+    }
+}
+
+
+
+.page-num {
+    font-size: 18px;
+    padding: 12px 16px;
+
+    @include mobile {
+        font-size: 16px;
+    }
+}
+
+.page-next {
+    background: #F2F2F2;
+}

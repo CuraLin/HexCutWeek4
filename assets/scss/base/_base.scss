@@ -1,0 +1,29 @@
+//base 
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+body {
+    line-height: 1.5;
+    color: $dark;
+    background: #fff;
+    // font-family: 'Roboto', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: $dark;
+    display: block;
+
+}
