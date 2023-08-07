@@ -1,0 +1,101 @@
+.store {
+    padding-top: 96px;
+    padding-bottom: 32px;
+
+
+
+    @include pad {
+        padding-top: 80px;
+        padding-bottom: 56px;
+    }
+
+    @include mobile {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+
+    .store__menu__list {
+        margin-bottom: 48px;
+
+        @include pad {
+            margin-bottom: 24px;
+        }
+    }
+
+
+    .title {       
+
+        @include mobile {
+            margin-bottom: 24px;
+            font-size: $h4-font-size;
+        }
+    }
+
+    .store__form {
+        margin-bottom: 40px;
+
+        @include mobile {
+            margin-bottom: 24px;
+        }
+
+        .fz-4 {
+            margin-right: 16px;
+
+            @include mobile {
+                font-size: $font-size-base;
+                margin-right: 8px;
+            }
+        }
+
+        select {
+            color: #495057;
+            font-size: 18px;
+            padding: 6px 12px;
+            width: 304px;
+
+            @include mobile {
+                width: 276px;
+            }
+        }
+
+
+    }
+
+
+
+    .store__menu {
+        .fz-4 {
+            padding: 8px 0 8px 24px;
+            border: 1px solid #00000020;
+
+        }
+
+    }
+
+    .store__menu__list__info {
+        padding: 16px 24px 8px 24px;
+        border: 1px solid #00000020;
+
+        .fz-5 {
+
+            margin-bottom: 8px;
+
+            span {
+                margin-right: 11px;
+            }
+        }
+    }
+
+    .store__menu__list__button {
+        background: $dark;
+        color: $light;
+        font-size: 19px;
+        padding: 16px 0;
+        padding-right: 40%;
+        padding-left: 40%;
+        white-space: nowrap;
+
+
+    }
+
+}

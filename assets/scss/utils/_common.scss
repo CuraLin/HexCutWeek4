@@ -45,36 +45,6 @@
     position: relative;
 }
 
-// flex
-
-.df {
-    display: flex;
-}
-
-.jcc {
-    justify-content: center;
-}
-
-.jcsb {
-    justify-content: space-between;
-}
-
-.aic {
-    align-items: center;
-}
-
-.df-c {
-    display: flex;
-    flex-direction: column;
-}
-
-.align-end {
-    align-self: flex-end;
-}
-
-.fx-grow {
-    flex-grow: 1;
-}
 
 .bold {
     font-weight: 700;
@@ -116,6 +86,50 @@
     height: 36px;
 }
 
+.title {
+    color: $dark;
+    margin-bottom: 33px;
+    text-align: left;
+    border-left: 8px solid #9F1213;
+    padding-left: 12px;
+    font-size: $h2-font-size;
+}
+
+// ˋ字體
+.roboto {
+    font-family: 'Roboto',sans-serif;
+}
+
+
+// font-size
+.fz-0 {
+    font-size: $font-size-base;
+}
+
+.fz-1 {
+    font-size: $h1-font-size;
+}
+
+.fz-2 {
+    font-size: $h2-font-size;
+}
+
+.fz-3 {
+    font-size: $h3-font-size;
+}
+
+.fz-4 {
+    font-size: $h4-font-size;
+}
+
+.fz-5 {
+    font-size: $h5-font-size;
+}
+
+.fz-6 {
+    font-size: $h6-font-size;
+}
+
 // font-weight
 
 .fontW-med {
@@ -128,4 +142,35 @@
 
 .fontW-black {
     font-weight: $fontW-black;
+}
+
+// flex
+
+.df {
+    display: flex;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.jcsb {
+    justify-content: space-between;
+}
+
+.aic {
+    align-items: center;
+}
+
+.df-c {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-end {
+    align-self: flex-end;
+}
+
+.fx-grow {
+    flex-grow: 1;
 }
